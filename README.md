@@ -1,6 +1,8 @@
 # litter
 Update of Holland ORNL DAAC litter database
 
+**Check For-C database**
+
 1. Add DOI and year to Holland studies (`Holland_DOIs.csv`)
 2. Add species codes (PIBA, etc.) and leaf habit (DBL, EBL, DNL, ENL)
 3. Check [Zhang et al. 2008](http://dx.doi.org/10.1093/jpe/rtn002) data and studies
