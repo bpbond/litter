@@ -1,0 +1,1558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US"><head>
+<meta name="docSource" content="guide document">
+<meta name="project" content="Global Vegetation">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/guide.css">
+<title>A Global Database of Litterfall Mass and Litter Pool Carbon and Nutrients</title>
+<link rel="stylesheet" type="text/css" href="/css/content.css">
+</head>
+<body>
+<div id="guidebox">
+<!--#include virtual="/guide_header.shtml" -->
+
+<h1 class="pagetitle">A Global Database of Litterfall Mass and Litter Pool Carbon and Nutrients<br>
+<a class="button" href="/cgi-bin/dsviewer.pl?ds_id=1244" target="_blank">Get Data</a>
+</h1>
+<div id="contentbox">
+<p class="I1">
+Revision Date: March&nbsp; 30, 2015</p>
+<h2>Summary:</h2>
+<p class="I1">Measurement data of aboveground litterfall and littermass and litter carbon, nitrogen, and nutrient concentrations were extracted from 685 original literature sources and compiled into a comprehensive database to support the analysis of global patterns of carbon and nutrients in litterfall and litter pools.  Data are included from sources dating from 1827 to 1997.  </p>
+ 	<p class="I1">The reported data include the literature reference, general site information (description, latitude, longitude, and elevation), site climate data (mean annual temperature and precipitation), site vegetation characteristics (management, stand age, ecosystem and vegetation-type codes), annual quantities of litterfall (by class, kg m-2 yr-1), litter pool mass (by class and litter layer, kg m-2), and concentrations of nitrogen (N), phosphorus (P), and base cations for the litterfall (g m-2 yr-1) and litter pool components (g m-2).  </p>
+	<p class="I1">The investigators intent was to compile a comprehensive data set of individual direct field measurements as reported by researchers. While the primary emphasis was on acquiring C data, measurements of N, P, and base cations were also obtained, although the database is sparse for elements other than C and N. </p>
+	<p class="I1"> <strong>Note that litterfall and litter pool masses (as dry matter) were not converted to carbon</strong>. This conversion fraction (~0.5 
+	by mass) can vary and so the data compilers did not convert the reported measurements so that others using the database can choose appropriate conversion factors. </p>	
+	
+	
+	<p class="I1">Each of the 1,497 records in the database represents a measurement site. Replicate measurements were averaged according to conventions described in Section 5 and recorded for each site in the database. The sites were at 575 different locations.
+	 </p>
+	
+	
+	<p class="I1">The database is provided in a single comma delimited (.csv) format file. A Shapefile with litterfall and littermass, and selected nutrient data is also provided.	Companion files include the bibliographic sources for the data provided, in both ASCII text (.txt) file and as a .pdf file, and a .pdf file with the definitions
+	 for Olson Ecosystem, Holdridge Life Zone, and Matthews vegetation type codes. </p>
+		<p class="centered">
+		<img alt="global distribution of data in database" src="Post_LitterfallPlots.png" height="375" width="750"></p><br>
+	<p class="I1">Figure 1. Global distribution of the 575 sites in the database.</p>
+	<p class="I1">&nbsp;</p>
+	<p class="I1"><strong>Acknowledgments: </strong> </p>
+	<p class="I1">This data collection started with a sabbatical visit in 1987 by W.M. Post to Dr. Paul Zinke’s laboratory at the University of California, Berkeley. Dr. Zinke’s collection of reference materials and those in the UC Berkeley Forestry Library provided a wealth of worldwide data from forestry reports and international literature sources. Additional support for assembling more recently published data was supported by NASA with funding from the ORNL DAAC to Elizabeth Holland, James Sulzman, and Robbie Staufer working at NCAR. A large collection of Russian data was contributed by Olga Krankina. Data published after 1997 are not included in this database.  </p>
+	
+<h2>Data and Documentation Access:</h2>
+<p class="I1"><strong>Get Data:  </strong>
+<a href="/cgi-bin/dsviewer.pl?ds_id=1244">http://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1244</a></p>
+	<p class="I1"><strong>Companion Files:</strong> </p>
+<p class="I1">1)	The bibliographic sources for the data are provided in ASCII text format, 	
+	<a href="http://daac.ornl.gov/daacdata/global_vegetation/Global_Litter_Carbon_Nutrients/comp/Litterfall_source_bibliography.txt">
+	Litterfall_source_bibliography.txt</a> and as 
+<a href="http://daac.ornl.gov/daacdata/global_vegetation/Global_Litter_Carbon_Nutrients/comp/Litterfall_source_bibliography.pdf">Litterfall_source_bibliography.pdf</a> file.</p>
+<p class="I1">2)	The <a href="http://daac.ornl.gov/daacdata/global_vegetation/Global_Litter_Carbon_Nutrients/comp/Litterfall_code_companion.pdf">
+Litterfall_code_companion.pdf </a>file provides the definitions for Olson Ecosystem, Holdridge Life Zone, and Matthews vegetation type codes.</p>
+
+	
+<h2>Data Citation:</h2>
+<p class="I1">
+<strong>
+Cite this data set as follows:</strong>
+</p>
+<p class="I1">Holland, E. A., W. M. Post, E. Matthews, J. Sulzman, R. Staufer, and O. Krankina. 2015. A Global Database of Litterfall 
+Mass and Litter Pool Carbon and Nutrients.
+ Data set. Available on-line [http://daac.ornl.gov] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, USA. 
+<a href="http://dx.doi.org/10.3334/ORNLDAAC/1244">http://dx.doi.org/10.3334/ORNLDAAC/1244</a></p>
+<p class="I1"><strong>Previous Version Note:</strong>  The metadata and documentation for this product were previously available from the ORNL DAAC as:<br><br>
+Holland, E. A., W. M. Post, E. Matthews, J. Sulzman, R. Staufer, and O. Krankina. 2005. Global Patterns of Litterfall and Litter Pool Carbon and Nutrients. Data set. Available on-line [http://daac.ornl.gov/] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A. 
+<br><br>
+Previously, the data were only available upon request from W.M. Post.
+The ORNL DAAC reviewed the site and location data before posting the files on-line. One duplicate site and four locations were corrected (e.g., positive longitudes changed to negative). Documentation was updated to reflect the latest description of SITE_ID (formerly ID) and row uniqueness.
+	</p>
+ 
+<h2>Table of Contents:</h2>
+<ul>
+<li><a href="#HDataSetOverview">1 Data Set Overview</a></li>
+<li><a href="#datacharact">2 Data Characteristics</a></li>
+<li><a href="#appderivation">3 Applications and
+Derivation</a></li>
+<li><a href="#qualityassess">4 Quality Assessment</a></li>
+<li><a href="#HAcqMatMethods">5 Acquisition
+Materials and Methods</a></li>
+<li><a href="#HDataDescrAccess">6 Data Access</a></li>
+<li><a href="#references">7 References </a></li>
+</ul>
+<a name="HDataSetOverview"></a>
+<h2>1. Data Set Overview:</h2>
+<p class="I1">Measurement data of aboveground litterfall and littermass and litter carbon, nitrogen, and nutrient concentrations were extracted from 685 original literature sources and compiled into a comprehensive database to support the analysis of global patterns of carbon and nutrients in litterfall and litter pools.  Data are included from sources dating from 1827 to 1997.  </p>
+ 	<p class="I1">The reported data include the literature reference, general site information (description, latitude, longitude, and elevation), site climate data (mean annual temperature and precipitation), site vegetation characteristics (management, stand age, ecosystem and vegetation-type codes), annual quantities of litterfall (by class, kg m-2 yr-1), litter pool mass (by class and litter layer, kg m-2), and concentrations of nitrogen (N), phosphorus (P), and base cations for the litterfall (g m-2 yr-1) and litter pool components (g m-2).  </p>
+	<p class="I1"> <strong>Note that litterfall and litter pool masses (as dry matter) were not converted to carbon.</strong> This conversion fraction (~0.5 
+	by mass) can vary and so the data compilers did not convert the reported measurements so that others using the data base can choose 
+	appropriate conversion factors. </p>
+	<p class="I1">The investigators intent was to compile a comprehensive data set of individual direct field measurements as reported by researchers. While the primary emphasis was on acquiring C data, measurements of N, P, and base cations were also obtained, although the database is sparse for elements other than C and N. </p>
+	
+	
+	<p class="I1">Each of the 1,497 records in the database represents a measurement site. Replicate measurements were averaged according to conventions described in Section 5 and recorded for each site in the database. The sites were at 575 different locations.
+	 </p>
+	
+	
+	<p class="I1">&nbsp; </p>	
+	
+<a name="datacharact"></a>
+<h2>2. Data Characteristics:</h2>
+
+<p class="I1"><strong>Spatial Coverage </strong> </p>
+<p class="I1">There is a generally global distribution of the 575 sites included in the database.</p>
+<p class="I1"><strong>Temporal Coverage</strong><p class="I1">
+The data are from published studies between 1827-01-01 and 1997-12-31</p>
+
+<p class="I1">
+<strong>
+Site boundaries:</strong>
+(All latitude and longitude given in decimal degrees) </p>
+<table class="grid" summary="This table gives the lat/lon bounds and geodetic datum for each site.">
+  <tbody>
+  <tr>
+    <th class="grid" style="width: 148px">
+Site (Region)</th>
+    <th class="grid" style="width: 103px">
+Westernmost Longitude</th>
+    <th class="grid" style="width: 106px">
+Easternmost Longitude</th>
+    <th class="grid" style="width: 117px">
+Northernmost Latitude</th>
+    <th class="grid" style="width: 108px">
+Southernmost Latitude</th>
+      </tr>
+  <tr><td class="grid" style="width: 148px">
+	  Global</td><td class="grid" style="width: 103px">-156.7</td>
+	  <td class="grid" style="width: 106px">
+	  176.2</td><td class="grid" style="width: 117px">
+	  72.5</td><td class="grid" style="width: 108px">
+	  -54.5</td></tr>
+	   
+	  </tbody></table><br>
+
+<p class="I1"><strong>
+Data File Information</strong>
+
+<p class="I1">There is one comma separated (.csv) data file and one Shapefile provided with this data set. Missing numeric and text values are represented by -99.  </p>
+	
+<p class="I1">	<strong>File:  Global_Litterfall.csv</strong></p>
+	
+	<p class="I1"><strong>What columns uniquely define a row?</strong></p>
+	
+<ul><li>Note that SITE_ID alone does not uniquely define a data row.  SITE_ID values are not unique.</li>
+<li>The combinations of (1) SITE_ID and REFERENCE1 or (2) SITE_ID with LATITUDE and LONGITUDE do uniquely identify a row.</li></ul>
+
+	<p class="u">The provided file is sorted by SITE_ID and REFERENCE1.</p>
+		<p class="I1"> <strong>Why do some columns contain only missing values?   
+		</strong>   
+		</p>
+		
+		<p class="I1">  The investigators intent was to compile a comprehensive data set of individual direct field measurements as reported by researchers. While the primary emphasis was on acquiring C data, measurements of N, P, and other base cations were also sought, but not always obtained. The blank cells and columns indicate that the reference sources were reviewed for these measurements but no measurements were reported. Therefore, the database is sparse for elements other than C and N. The table below includes two columns that show the completeness of each reported data column. 
+		</p>
+
+
+<p class="I1"> <strong>File: Global_Litterfall.zip</strong></p>
+
+
+<p class="I1"> When unzipped, this shapefile contains six files (*.shx, *.dbf, *.prj, *.sbn, *.sbx, and *.shp).  Due to shape file 
+volume constraints, the columns Reference and Reference2 were omitted and the sets of columns for Mn, Na, and K concentration were also omitted. 
+		</p>
+
+
+<p class="I1">  Parameters of the shapefile:
+		</p>
+
+
+<p class="I3">Geometry Type:	 Point  <br>
+		Geographic Coordinate System: GCS_WGS_1984<br>
+Datum: 	D_WGS_1984<br>
+Prime Meridian: Greenwich<br>
+Angular Unit: Degree<br><br>
+
+Extent-<br>
+North: 72<br>
+South: -54<br>
+East: 176<br>
+West: -157</p>
+
+<p class="I1"> Attributes are defined in the following description table. 
+</p>
+	<p class="I1">Table 1. Data file description</p>
+
+
+	
+
+
+
+
+	<table class="grid"><tbody><tr>
+	<th class="grid" style="width: 57px">Column Number</th>
+		<th class="grid" style="width: 90px">
+		Column Heading</th>
+		<th class="grid" style="width: 140px">
+		Column Name</th>
+
+<th class="grid" style="width: 71px">Units</th>
+		<th class="grid" style="width: 213px">Notes</th>
+
+
+		<th class="grid" style="width:249px">Number of non-missing values. 1,497 records.</th>
+
+
+		<th class="grid" style="width: 269px">Percent completeness</th>
+
+
+</tr><tr><td class="gridL" colspan="4"><strong>Site Information Fields ( 0 – 15 )</strong></td>
+<td class="gridL" style="width: 213px"><strong>Missing data code:  -99</strong></td>
+<td class="grid" style="width: 249px">&nbsp;</td>
+<td class="grid" style="width: 269px">&nbsp;</td>
+</tr><tr><td class="gridL" colspan="4">&nbsp;</td>
+<td class="gridL" style="width: 213px">&nbsp;</td>
+<td class="grid" style="width: 249px">&nbsp;</td>
+<td class="grid" style="width: 269px">&nbsp;</td>
+</tr><tr><td class="grid" style="width: 57px">0</td>
+			<td class="grid" style="width: 106px">	SITE_ID</td>
+			<td class="grid" style="width: 140px">	SITE_ID</td>
+			<td class="grid" style="width: 71px">	5-7 digit code</td>
+			<td class="gridL" style="width: 213px">Digits 1-3 identify the source publication and digits 4-7 represent different sites for which measurements are reported.  Sites defined as “0000” indicate that data are reported for only one site. SITE_ID values are not unique.</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">1</td>
+			<td class="grid" style="width: 106px">	PLOTNAME</td>
+			<td class="grid" style="width: 140px">	PLOTNAME</td>
+			<td class="grid" style="width: 71px"></td>
+			<td class="gridL" style="width: 213px">		General description of the measurement location, such as country, state, and/or region.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">2</td>
+			<td class="grid" style="width: 106px">	LATITUDE</td>
+			<td class="grid" style="width: 140px">	LATITUDE</td>
+			<td class="grid" style="width: 71px">	Decimal degrees</td>
+			<td class="gridL" style="width: 213px">	If exact longitude and latitude are not given in the data source, we used descriptions of the site, together with detailed maps, to estimate the longitude and latitude of the site.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">3</td>
+			<td class="grid" style="width: 106px">	LONGITUDE</td>
+			<td class="grid" style="width: 140px">	LONGITUDE</td>
+			<td class="grid" style="width: 71px">	Decimal degrees </td>
+			<td class="gridL" style="width: 213px">	If exact longitude and latitude are not given in the data source, we used descriptions of the site, together with detailed maps, to estimate the longitude and latitude of the site.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">4</td>
+			<td class="grid" style="width: 106px">	ELEVATION</td>
+			<td class="grid" style="width: 140px">	ELEVATION</td>
+			<td class="grid" style="width: 71px">	m </td>
+			<td class="gridL" style="width: 213px">	Elevation in meters as reported in the data source.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">5</td>
+			<td class="grid" style="width: 106px">	MEANTEMP</td>
+			<td class="grid" style="width: 140px">	MEANTEMP</td>
+			<td class="grid" style="width: 71px">	degrees C </td>
+			<td class="gridL" style="width: 213px">	Mean annual temperature was recorded if reported.  Otherwise, we used nearest weather station data to estimate MAT for the site.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">6</td>
+			<td class="grid" style="width: 106px">	BIOTEMP</td>
+			<td class="grid" style="width: 140px">	  BIOTEMPERATURE</td>
+			<td class="grid" style="width: 71px">	degrees C</td>
+			<td class="gridL" style="width: 213px">	Biotemperature is the annual mean unit-period temperature with substitution of zero for all temperature values below 0 degrees C and above 30 degrees C.
+</td>
+			<td class="grid" style="width: 249px">55</td>
+			<td class="grid" style="width: 269px">3.7</td></tr><tr><td class="grid" style="width: 57px">7</td>
+			<td class="grid" style="width: 106px">	PRECIP</td>
+			<td class="grid" style="width: 140px">	 PRECIPITATION</td>
+			<td class="grid" style="width: 71px">	mm </td>
+			<td class="gridL" style="width: 213px">	If precipitation was not reported, we used a climate atlas to estimate precipitation.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">8</td>
+			<td class="grid" style="width: 106px">	OLSON</td>
+			<td class="grid" style="width: 140px">	 OLSON CODE	</td>
+			<td class="grid" style="width: 71px">	Olson</td>
+			<td class="gridL" style="width: 213px"> Olson Ecosystem codes, 0-99.  See code companion file for definitions.
+</td>
+			<td class="grid" style="width: 249px">810</td>
+			<td class="grid" style="width: 269px">54.2</td></tr><tr><td class="grid" style="width: 57px">9</td>
+			<td class="grid" style="width: 106px">	LIFEZONE</td>
+			<td class="grid" style="width: 140px">	LIFEZONE</td>
+			<td class="grid" style="width: 71px">	numeric </td>
+			<td class="gridL" style="width: 213px">	Holdridge Life Zone Codes, 0-37. See code companion file for definitions.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">10</td>
+			<td class="grid" style="width: 106px">	MATTHEWS</td>
+			<td class="grid" style="width: 140px">	MATTHEWS CODE</td>
+			<td class="grid" style="width: 71px">	numeric</td>
+			<td class="gridL" style="width: 213px"> 	Matthews vegetation type code, 1-32. See code companion file for definitions.
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">11</td>
+			<td class="grid" style="width: 106px">	VEGETATION</td>
+			<td class="grid" style="width: 140px">	VEGETATION</td>
+			<td class="grid" style="width: 71px">	text </td>
+			<td class="gridL" style="width: 213px">	Based on the source document, we recorded dominant species, lifeforms, physiognomic descriptions, environmental conditions.
+</td>
+			<td class="grid" style="width: 249px">1494</td>
+			<td class="grid" style="width: 269px">99.8</td></tr><tr><td class="grid" style="width: 57px">12</td>
+			<td class="grid" style="width: 106px">	MANAGED</td>
+			<td class="grid" style="width: 140px"> 	MANAGED CODE</td>
+			<td class="grid" style="width: 71px">	text</td>
+			<td class="gridL" style="width: 213px"> 	Code: Yes (Y); No (N).  A site was considered unmanaged if relatively undisturbed at the time measurements were made and managed if strongly influenced by humans.
+</td>
+			<td class="grid" style="width: 249px">789</td>
+			<td class="grid" style="width: 269px">52.8</td></tr><tr><td class="grid" style="width: 57px">13</td>
+			<td class="grid" style="width: 106px">	AGE</td>
+			<td class="grid" style="width: 140px"> 	PLOT AGE</td>
+			<td class="grid" style="width: 71px">	years</td>
+			<td class="gridL" style="width: 213px"> 	If stand is not known to be disturbed then “mature” was assigned.
+</td>
+			<td class="grid" style="width: 249px">925</td>
+			<td class="grid" style="width: 269px">61.8</td></tr><tr><td class="grid" style="width: 57px">14</td>
+			<td class="grid" style="width: 106px">	REFERENCE1</td>
+			<td class="grid" style="width: 140px">	REFERENCE1</td>
+			<td class="grid" style="width: 71px">	text </td>
+			<td class="gridL" style="width: 213px">	Short citation (Author, year, publication, volume, pages) of source publications. See Litterfall_source_bibliography companion file (In combination with SITE_ID, uniquely identifies a data row)
+</td>
+			<td class="grid" style="width: 249px">1,497</td>
+			<td class="grid" style="width: 269px">100</td></tr><tr><td class="grid" style="width: 57px">15</td>
+			<td class="grid" style="width: 106px">	REFERENCE2</td>
+			<td class="grid" style="width: 140px">	REFERENCE2</td>
+			<td class="grid" style="width: 71px">	text </td>
+			<td class="gridL" style="width: 213px">	Short citation (Author, year, publication, volume, pages) of source publications. See Litterfall_source_bibliography companion file.
+</td>
+			<td class="grid" style="width: 249px">188</td>
+			<td class="grid" style="width: 269px">12.6</td></tr></tbody>
+	</table>
+<br>
+<table class="grid"><tbody><tr>
+	<th class="grid" style="width: 57px">Column Number</th>
+		<th class="grid" style="width: 110px">
+		Column Heading</th>
+	<th class="grid" style="width: 216px">
+		Column Name</th>
+
+		<th class="grid" style="width: 132px">Number of non-missing values. 1,497 records
+	</th>
+
+		<th class="grid" style="width: 129px">Percent completeness
+</th>
+
+		</tr><tr><td class="gridL" colspan="5"><strong>Litter Data Fields ( 16 – 191 ) &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Missing data code:  -99
+		</strong>
+</tr><tr><td class="gridL" colspan="5">&nbsp;</td></tr>
+<tr><td class="gridL" colspan="5"><strong>Litterfall: Units are in kg m-2 yr-1 </strong></td>
+	</tr><tr><td class="gridL" colspan="5">&nbsp;
+		</td></tr><tr><td class="grid" style="width: 57px">16</td>
+		<td class="grid"  style="width: 110px">
+LFLLW</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL</td>
+		<td class="grid" style="width: 132px">670</td>
+		<td class="grid" style="width: 129px">44.8</td></tr><tr><td class="grid" style="width: 57px">17</td>
+		<td class="grid"  style="width: 110px">
+SWFLLW</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL</td>
+		<td class="grid" style="width: 132px">	401</td>
+		<td class="grid" style="width: 129px">	26.8</td></tr><tr><td class="grid" style="width: 57px">18</td>
+		<td class="grid"  style="width: 110px">
+FINFLLW</td>
+		<td class="grid" style="width: 216px">	LEAF_AND_SMALL_WOOD_FALL</td>
+		<td class="grid" style="width: 132px">	134</td>
+		<td class="grid" style="width: 129px">&nbsp;	</td></tr><tr>
+		<td class="grid" style="width: 57px; height: 26px;">19</td>
+		<td class="grid"  style="width: 110px; height: 26px;">
+RPRFLLW</td>
+		<td class="grid" style="width: 216px; height: 26px;">	REPRODUCTIVE_FALL</td>
+		<td class="grid" style="width: 132px; height: 26px;">	302</td>
+		<td class="grid" style="width: 129px; height: 26px;">	20.2</td></tr><tr><td class="grid" style="width: 57px">20</td>
+		<td class="grid"  style="width: 110px">
+LTRFLLW</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_LITTER_FALL</td>
+		<td class="grid" style="width: 132px">	650</td>
+		<td class="grid" style="width: 129px">	43.5</td></tr><tr><td class="grid" style="width: 57px">21</td>
+		<td class="grid"  style="width: 110px">
+LWFLLW</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL</td>
+		<td class="grid" style="width: 132px">	72</td>
+		<td class="grid" style="width: 129px">	4.9</td><tr><td class="gridL" colspan="5">&nbsp;
+</tr>
+<tr><td class="gridL" colspan="5" style="height: 26px"><strong>Litter Pool Masses: Units are in kg m-2	</strong>
+
+</td></tr>
+<tr><td class="grid" style="width: 57px; height: 26px;">22</td>
+		<td class="grid"  style="width: 110px">
+	LLEAFW</td>
+		<td class="grid" style="height: 26px; width: 216px">	L_LEAF_WEIGHT</td>
+		<td class="grid" style="height: 26px; width: 132px">	83</td>
+		<td class="grid" style="height: 26px; width: 129px">	5.6</td></tr><tr>
+		<td class="grid" style="width: 57px; height: 26px;">2.7</td>
+		<td class="grid"  style="width: 110px; height: 26px;">
+LSWW</td>
+		<td class="grid" style="width: 216px; height: 26px;">	L_SMALL_WOOD_WEIGHT</td>
+		<td class="grid" style="width: 132px; height: 26px;">	39</td>
+		<td class="grid" style="width: 129px; height: 26px;">	2.7</td></tr><tr><td class="grid" style="width: 57px">24</td>
+		<td class="grid"  style="width: 110px">
+LFINW</td>
+		<td class="grid" style="width: 216px">	L_FINE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">25</td>
+		<td class="grid"  style="width: 110px">
+LRPRW</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	38</td>
+		<td class="grid" style="width: 129px">	2.6</td></tr><tr><td class="grid" style="width: 57px">26</td>
+		<td class="grid"  style="width: 110px">
+LLTRW</td>
+		<td class="grid" style="width: 216px">	L_LITTER_WEIGHT</td>
+		<td class="grid" style="width: 132px">	66</td>
+		<td class="grid" style="width: 129px">	4.5</td></tr><tr><td class="grid" style="width: 57px">27</td>
+		<td class="grid"  style="width: 110px">
+FLEAFW</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_WEIGHT</td>
+		<td class="grid" style="width: 132px">	51</td>
+		<td class="grid" style="width: 129px">	3.5</td></tr><tr><td class="grid" style="width: 57px">28</td>
+		<td class="grid"  style="width: 110px">
+FSWW</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_WEIGHT</td>
+		<td class="grid" style="width: 132px">	8</td>
+		<td class="grid" style="width: 129px">	0.6</td></tr><tr><td class="grid" style="width: 57px">29</td>
+		<td class="grid"  style="width: 110px">
+FFINW</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	26</td>
+		<td class="grid" style="width: 129px">	1.8</td></tr><tr><td class="grid" style="width: 57px">30</td>
+		<td class="grid"  style="width: 110px">
+FRPRW</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	8</td>
+		<td class="grid" style="width: 129px">	0.6</td></tr><tr><td class="grid" style="width: 57px">31</td>
+		<td class="grid"  style="width: 110px">
+FLTRW</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_WEIGHT</td>
+		<td class="grid" style="width: 132px">	94</td>
+		<td class="grid" style="width: 129px">	6.3</td></tr><tr><td class="grid" style="width: 57px">32</td>
+		<td class="grid"  style="width: 110px">
+TLEAFW</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_WEIGHT</td>
+		<td class="grid" style="width: 132px">	142</td>
+		<td class="grid" style="width: 129px">	9.5</td></tr><tr><td class="grid" style="width: 57px">33</td>
+		<td class="grid"  style="width: 110px">
+TSWW</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_WEIGHT</td>
+		<td class="grid" style="width: 132px">	151</td>
+		<td class="grid" style="width: 129px">	10.1</td></tr><tr><td class="grid" style="width: 57px">34</td>
+		<td class="grid"  style="width: 110px">
+TFINW</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	121</td>
+		<td class="grid" style="width: 129px">	8.1</td></tr><tr><td class="grid" style="width: 57px">35</td>
+		<td class="grid"  style="width: 110px">
+TRPRW</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_WEIGHT</td>
+		<td class="grid" style="width: 132px">	27</td>
+		<td class="grid" style="width: 129px">	1.9</td></tr><tr><td class="grid" style="width: 57px">36</td>
+		<td class="grid"  style="width: 110px">
+TLTRW</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_WEIGHT</td>
+		<td class="grid" style="width: 132px">	467</td>
+		<td class="grid" style="width: 129px">	31.2</td></tr><tr><td class="grid" style="width: 57px">37</td>
+		<td class="grid"  style="width: 110px">
+LWW</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_WEIGHT</td>
+		<td class="grid" style="width: 132px">	164</td>
+		<td class="grid" style="width: 129px">	11</td><tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr>
+		<td class="gridL" colspan="5" style="height: 27px"><strong>Litterfall N: Units are in g m-2 yr-1</strong>
+
+</td></tr>
+<tr><td class="grid" style="width: 57px">38</td>
+		<td class="grid"  style="width: 110px">
+LFLLN</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_N</td>
+		<td class="grid" style="width: 132px">	222</td>
+		<td class="grid" style="width: 129px">	14.9</td></tr><tr><td class="grid" style="width: 57px">39</td>
+		<td class="grid"  style="width: 110px">
+SWFLLN</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_N</td>
+		<td class="grid" style="width: 132px">	122</td>
+		<td class="grid" style="width: 129px">	8.2</td></tr><tr><td class="grid" style="width: 57px">40</td>
+		<td class="grid"  style="width: 110px">
+FINFLLN</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_N</td>
+		<td class="grid" style="width: 132px">	36</td>
+		<td class="grid" style="width: 129px">	2.5</td></tr><tr><td class="grid" style="width: 57px">41</td>
+		<td class="grid"  style="width: 110px">
+RPRFLLN</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_N	</td>
+		<td class="grid" style="width: 132px">	68</td>
+		<td class="grid" style="width: 129px">	4.6</td></tr><tr><td class="grid" style="width: 57px">42</td>
+		<td class="grid"  style="width: 110px">
+LTRFLLN</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_N</td>
+		<td class="grid" style="width: 132px">	335</td>
+		<td class="grid" style="width: 129px">	22.4</td></tr><tr><td class="grid" style="width: 57px">43</td>
+		<td class="grid"  style="width: 110px">
+LWFLLN</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL_N</td>
+		<td class="grid" style="width: 132px">	39</td>
+		<td class="grid" style="width: 129px">	2.7</td></tr>
+		<tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr><td class="gridL" colspan="5"><strong>Litter Pool N: Units are in g m-2		</strong>
+</td></tr>
+<tr><td class="grid" style="width: 57px">44</td>
+		<td class="grid"  style="width: 110px">
+LLEAFN</td>
+		<td class="grid" style="width: 216px">	L_LEAF_N</td>
+		<td class="grid" style="width: 132px">	4</td>
+		<td class="grid" style="width: 129px">	0.3</td></tr><tr><td class="grid" style="width: 57px">45</td>
+		<td class="grid"  style="width: 110px">
+LSWN</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_N</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">46</td>
+		<td class="grid"  style="width: 110px">
+LFINN</td>
+		<td class="grid" style="width: 216px">	L_FINE_N</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">47</td>
+		<td class="grid"  style="width: 110px">
+LRPRN</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_N</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">48</td>
+		<td class="grid"  style="width: 110px">
+LLTRN</td>
+		<td class="grid" style="width: 216px">	L_LITTER_N</td>
+		<td class="grid" style="width: 132px">	43</td>
+		<td class="grid" style="width: 129px">	2.9</td></tr><tr><td class="grid" style="width: 57px">49</td>
+		<td class="grid"  style="width: 110px">
+FLEAFN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_N</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">50</td>
+		<td class="grid"  style="width: 110px">
+FSWN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_N</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">51</td>
+		<td class="grid"  style="width: 110px">
+FFINN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_N
+		</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">52</td>
+		<td class="grid"  style="width: 110px">
+FRPRN</td><td class="grid" style="width: 216px">F_AND_H_REPRODUCTIVE_N	</td>
+		
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td>
+		
+</tr><tr><td class="grid" style="width: 57px">53</td>
+		<td class="grid"  style="width: 110px">
+FLTRN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_N</td>
+		<td class="grid" style="width: 132px">	49</td>
+		<td class="grid" style="width: 129px">	3.3</td></tr><tr><td class="grid" style="width: 57px">54</td>
+		<td class="grid"  style="width: 110px">
+TLEAFN</td><td class="grid" style="width: 216px">	TOTAL_LEAF_N</td>
+		
+		<td class="grid" style="width: 132px">	36</td>
+		
+		<td class="grid" style="width: 129px">	2.5</td>
+		
+</tr><tr><td class="grid" style="width: 57px">55</td>
+		<td class="grid"  style="width: 110px">
+TSWN</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_N</td>
+		<td class="grid" style="width: 132px">	28</td>
+		<td class="grid" style="width: 129px">	1.9</td></tr><tr><td class="grid" style="width: 57px">56</td>
+		<td class="grid"  style="width: 110px">
+TFINN</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_N</td>
+		<td class="grid" style="width: 132px">	5</td>
+		<td class="grid" style="width: 129px">	0.4</td></tr><tr><td class="grid" style="width: 57px">57</td>
+		<td class="grid"  style="width: 110px">
+TRPRN</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_N</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr><tr><td class="grid" style="width: 57px">58</td>
+		<td class="grid"  style="width: 110px">
+TLTRN</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_N</td>
+		<td class="grid" style="width: 132px">	220</td>
+		<td class="grid" style="width: 129px">	14.7</td></tr><tr><td class="grid" style="width: 57px">59</td>
+		<td class="grid"  style="width: 110px">
+LWN</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_N</td>
+		<td class="grid" style="width: 132px">	30</td>
+		<td class="grid" style="width: 129px">	2.1</td></tr><tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+<tr><td class="gridL" colspan="5"><strong>Litterfall P: Units are in g m-2 yr-1</strong>
+</td></tr>
+<tr><td class="grid" style="width: 57px">60</td>
+		<td class="grid"  style="width: 110px">
+LFLLP</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_P</td>
+		<td class="grid" style="width: 132px">	180</td>
+		<td class="grid" style="width: 129px">	12.1</td></tr>
+		
+		<tr><td class="grid" style="width: 57px">61</td>
+		<td class="grid"  style="width: 110px">
+SWFLLP</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_P</td>
+		<td class="grid" style="width: 132px">	98</td>
+		<td class="grid" style="width: 129px">	6.6</td></tr>
+		
+		<tr><td class="grid" style="width: 57px">62</td>
+		<td class="grid"  style="width: 110px">
+FINFLLP</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_P</td>
+		<td class="grid" style="width: 132px">	40</td>
+		<td class="grid" style="width: 129px">	2.7</td></tr>
+		<tr><td class="grid" style="width: 57px">63</td>
+		<td class="grid"  style="width: 110px">
+RPRFLLP</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_P</td>
+		<td class="grid" style="width: 132px">	59</td>
+		<td class="grid" style="width: 129px">	4</td></tr>
+		<tr><td class="grid" style="width: 57px">64</td>
+		<td class="grid"  style="width: 110px">
+LTRFLLP</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_P</td>
+		<td class="grid" style="width: 132px">	308</td>
+		<td class="grid" style="width: 129px">	20.6</td></tr>
+		
+		<tr><td class="grid" style="width: 57px">65</td>
+		<td class="grid"  style="width: 110px">
+LWFLLP</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL_P</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr>
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+<tr><td class="gridL" colspan="5"><strong>Litter Pool P: Units are in g m-2</strong>
+</td></tr>
+<tr><td class="grid" style="width: 57px">66</td>
+		<td class="grid"  style="width: 110px">
+LLEAFP</td>
+		<td class="grid" style="width: 216px">	L_LEAF_P</td>
+		<td class="grid" style="width: 132px">	3</td>
+		<td class="grid" style="width: 129px">	0.3</td></tr><tr><td class="grid" style="width: 57px">67</td>
+		<td class="grid"  style="width: 110px">
+LSWP</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_P</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">68</td>
+		<td class="grid"  style="width: 110px">
+LFINP</td>
+		<td class="grid" style="width: 216px">	L_FINE_P</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">69</td>
+		<td class="grid"  style="width: 110px">
+LRPRP</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_P</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">70</td>
+		<td class="grid"  style="width: 110px">
+LLTRP</td>
+		<td class="grid" style="width: 216px">	L_LITTER_P</td>
+		<td class="grid" style="width: 132px">	32</td>
+		<td class="grid" style="width: 129px">	2.2</td></tr><tr><td class="grid" style="width: 57px">71</td>
+		<td class="grid"  style="width: 110px">
+FLEAFP</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_P</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">72</td>
+		<td class="grid"  style="width: 110px">
+FSWP</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_P</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">73</td>
+		<td class="grid"  style="width: 110px">
+FFINP</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_P</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">74</td>
+		<td class="grid"  style="width: 110px">
+FRPRP</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_P</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">75</td>
+		<td class="grid"  style="width: 110px">
+FLTRP</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_P</td>
+		<td class="grid" style="width: 132px">	39</td>
+		<td class="grid" style="width: 129px">	2.7</td></tr><tr><td class="grid" style="width: 57px">76</td>
+		<td class="grid"  style="width: 110px">
+TLEAFP</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_P</td>
+		<td class="grid" style="width: 132px">	72</td>
+		<td class="grid" style="width: 129px">	4.9</td></tr><tr><td class="grid" style="width: 57px">77</td>
+		<td class="grid"  style="width: 110px">
+TSWP</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_P</td>
+		<td class="grid" style="width: 132px">	27</td>
+		<td class="grid" style="width: 129px">	1.9</td></tr><tr><td class="grid" style="width: 57px">78</td>
+		<td class="grid"  style="width: 110px">
+TFINP</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_P</td>
+		<td class="grid" style="width: 132px">	4</td>
+		<td class="grid" style="width: 129px">	0.3</td></tr><tr><td class="grid" style="width: 57px">79</td>
+		<td class="grid"  style="width: 110px">
+TRPRP</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_P</td>
+		<td class="grid" style="width: 132px">	19</td>
+		<td class="grid" style="width: 129px">	1.3</td></tr><tr><td class="grid" style="width: 57px">80</td>
+		<td class="grid"  style="width: 110px">
+TLTRP</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_P</td>
+		<td class="grid" style="width: 132px">	175</td>
+		<td class="grid" style="width: 129px">	11.7</td></tr><tr><td class="grid" style="width: 57px">81</td>
+		<td class="grid"  style="width: 110px">
+LWP</td><td class="grid" style="width: 216px">	LARGE_WOOD_P</td>
+		
+		<td class="grid" style="width: 132px">	31</td>
+		
+		<td class="grid" style="width: 129px">	2.1</td>
+		
+</tr><tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+
+<tr><td class="gridL" colspan="5"><strong>Litterfall Ca: Units are in g m-2 yr-1</strong></td>
+</tr>
+<tr><td class="grid" style="width: 57px">82</td>
+		<td class="grid" style="width: 110px">	LFLLCA</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_CA
+</td>
+		<td class="grid" style="width: 132px">	153</td>
+		<td class="grid" style="width: 129px">	10.3</td></tr><tr><td class="grid" style="width: 57px">83</td>
+		<td class="grid" style="width: 110px">	SWFLLCA</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_CA
+</td>
+		<td class="grid" style="width: 132px">	80</td>
+		<td class="grid" style="width: 129px">	5.4</td></tr><tr><td class="grid" style="width: 57px">84</td>
+		<td class="grid" style="width: 110px">	FINFLLCA</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_CA
+</td>
+		<td class="grid" style="width: 132px">	36</td>
+		<td class="grid" style="width: 129px">	2.5</td></tr><tr><td class="grid" style="width: 57px">85</td>
+		<td class="grid" style="width: 110px">	RPRFLLCA</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_CA
+</td>
+		<td class="grid" style="width: 132px">	51</td>
+		<td class="grid" style="width: 129px">	3.5</td></tr><tr><td class="grid" style="width: 57px">86</td>
+		<td class="grid" style="width: 110px">	LTRFLLCA</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_CA
+</td>
+		<td class="grid" style="width: 132px">	282</td>
+		<td class="grid" style="width: 129px">	18.9</td></tr>
+		
+		<tr><td class="grid" style="width: 57px">87</td>
+		<td class="grid" style="width: 110px">	LWFLLCA</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL_CA</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</tr>
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+
+<tr><td class="gridL" colspan="5"><strong>Litter Pool Ca: Units are in g m-2 </strong></td></tr>
+
+<tr><td class="grid" style="width: 57px">88</td>
+		<td class="grid" style="width: 110px">	LLEAFCA</td>
+		<td class="grid" style="width: 216px">	L_LEAF_CA</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">89</td>
+		<td class="grid" style="width: 110px">	LSWCA</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_CA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">90</td>
+		<td class="grid" style="width: 110px">	LFINCA</td>
+		<td class="grid" style="width: 216px">	L_FINE_CA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">91</td>
+		<td class="grid" style="width: 110px">	LRPRCA</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_CA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">92</td>
+		<td class="grid" style="width: 110px">	LLTRCA</td>
+		<td class="grid" style="width: 216px">	L_LITTER_CA		
+</td>
+		<td class="grid" style="width: 132px">	37</td>
+		<td class="grid" style="width: 129px">	2.5</td></tr><tr><td class="grid" style="width: 57px">93</td>
+		<td class="grid" style="width: 110px">	FLEAFCA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_CA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">94</td>
+		<td class="grid" style="width: 110px">	FSWCA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_CA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">95</td>
+		<td class="grid" style="width: 110px">	FFINCA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_CA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">96</td>
+		<td class="grid" style="width: 110px">	FRPRCA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_CA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">97</td>
+		<td class="grid" style="width: 110px">	FLTRCA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_CA		
+</td>
+		<td class="grid" style="width: 132px">	43</td>
+		<td class="grid" style="width: 129px">	2.9</td></tr><tr><td class="grid" style="width: 57px">98</td>
+		<td class="grid" style="width: 110px">	TLEAFCA</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_CA
+</td>
+		<td class="grid" style="width: 132px">	64</td>
+		<td class="grid" style="width: 129px">	4.3</td></tr><tr><td class="grid" style="width: 57px">99</td>
+		<td class="grid" style="width: 110px">	TSWCA</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_CA
+</td>
+		<td class="grid" style="width: 132px">	20</td>
+		<td class="grid" style="width: 129px">	1.4</td></tr><tr><td class="grid" style="width: 57px">100</td>
+		<td class="grid" style="width: 110px">	TFINCA</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_CA
+</td>
+		<td class="grid" style="width: 132px">	8</td>
+		<td class="grid" style="width: 129px">	0.6</td></tr><tr><td class="grid" style="width: 57px">101</td>
+		<td class="grid" style="width: 110px">	TRPRCA</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_CA
+</td>
+		<td class="grid" style="width: 132px">	19</td>
+		<td class="grid" style="width: 129px">	1.3</td></tr><tr><td class="grid" style="width: 57px">102</td>
+		<td class="grid" style="width: 110px">	TLTRCA</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_CA		
+</td>
+		<td class="grid" style="width: 132px">	171</td>
+		<td class="grid" style="width: 129px">	11.5</td></tr><tr><td class="grid" style="width: 57px">103</td>
+		<td class="grid" style="width: 110px">	LWCA</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_CA</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr>
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+<tr><td class="gridL" colspan="5"><strong>Litterfall Mg: Units are in g m-2 yr-1</strong></td></tr>
+<tr><td class="grid" style="width: 57px">104</td>
+		<td class="grid" style="width: 110px">	LFLLMG</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_MG
+</td>
+		<td class="grid" style="width: 132px">	131</td>
+		<td class="grid" style="width: 129px">	8.8</td></tr><tr><td class="grid" style="width: 57px">105</td>
+		<td class="grid" style="width: 110px">	SWFLLMG</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_MG
+</td>
+		<td class="grid" style="width: 132px">	66</td>
+		<td class="grid" style="width: 129px">	4.5</td></tr><tr>
+		<td class="grid" style="width: 57px; height: 26px;">106</td>
+		<td class="grid" style="width: 110px; height: 26px;">	FINFLLMG</td>
+		<td class="grid" style="width: 216px; height: 26px;">	FINE_FALL_MG
+</td>
+		<td class="grid" style="width: 132px; height: 26px;">	29</td>
+		<td class="grid" style="width: 129px; height: 26px;">	2</td></tr><tr><td class="grid" style="width: 57px">107</td>
+		<td class="grid" style="width: 110px">	RPRFLLMG</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_MG
+</td>
+		<td class="grid" style="width: 132px">	45</td>
+		<td class="grid" style="width: 129px">	3.1</td></tr><tr><td class="grid" style="width: 57px">108</td>
+		<td class="grid" style="width: 110px">	LTRFLLMG</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_MG
+</td>
+		<td class="grid" style="width: 132px">	258</td>
+		<td class="grid" style="width: 129px">	17.3</td></tr><tr><td class="grid" style="width: 57px">109</td>
+		<td class="grid" style="width: 110px">	LWFLLMG</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL_MG</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr>
+		
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+<tr><td class="gridL" colspan="5"><strong>Litter Pool Mg: Units are in g m-2 
+		</strong> 
+</td></tr>
+<tr><td class="grid" style="width: 57px">110</td>
+		<td class="grid" style="width: 110px">	LLEAFMG	</td>
+		<td class="grid" style="width: 216px">L_LEAF_MG
+</td>
+		<td class="grid" style="width: 132px">2</td>
+		<td class="grid" style="width: 129px">0.2</td></tr><tr><td class="grid" style="width: 57px">111</td>
+		<td class="grid" style="width: 110px">	LSWMG</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_MG
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">112</td>
+		<td class="grid" style="width: 110px">	LFINMG</td>
+		<td class="grid" style="width: 216px">	L_FINE_MG
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">113</td>
+		<td class="grid" style="width: 110px">	LRPRMG</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_MG
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">114</td>
+		<td class="grid" style="width: 110px">	LLTRMG</td>
+		<td class="grid" style="width: 216px">	L_LITTER_MG
+		
+</td>
+		<td class="grid" style="width: 132px">	31</td>
+		<td class="grid" style="width: 129px">	2.1</td></tr><tr><td class="grid" style="width: 57px">115</td>
+		<td class="grid" style="width: 110px">	FLEAFMG</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_MG
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">116</td>
+		<td class="grid" style="width: 110px">	FSWMG</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_MG
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">117</td>
+		<td class="grid" style="width: 110px">	FFINMG</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_MG
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">118</td>
+		<td class="grid" style="width: 110px">	FRPRMG</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_MG
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">119	</td>
+		<td class="grid" style="width: 110px">FLTRMG</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_MG
+		
+</td>
+		<td class="grid" style="width: 132px">	38</td>
+		<td class="grid" style="width: 129px">	2.6</td></tr><tr><td class="grid" style="width: 57px">120</td>
+		<td class="grid" style="width: 110px">	TLEAFMG</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_MG
+</td>
+		<td class="grid" style="width: 132px">	63</td>
+		<td class="grid" style="width: 129px">	4.3</td></tr><tr><td class="grid" style="width: 57px">121</td>
+		<td class="grid" style="width: 110px">	TSWMG</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_MG
+</td>
+		<td class="grid" style="width: 132px">	20</td>
+		<td class="grid" style="width: 129px">	1.4</td></tr><tr><td class="grid" style="width: 57px">122</td>
+		<td class="grid" style="width: 110px">	TFINMG</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_MG
+</td>
+		<td class="grid" style="width: 132px">	8</td>
+		<td class="grid" style="width: 129px">	0.6</td></tr><tr><td class="grid" style="width: 57px">123</td>
+		<td class="grid" style="width: 110px">TRPRMG</td>
+		<td class="grid" style="width: 216px">TOTAL_REPRODUCTIVE_MG
+</td>
+		<td class="grid" style="width: 132px">19</td>
+		<td class="grid" style="width: 129px">1.3</td></tr><tr><td class="grid" style="width: 57px">124</td>
+		<td class="grid" style="width: 110px">	TLTRMG</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_MG		
+</td>
+		<td class="grid" style="width: 132px">	141</td>
+		<td class="grid" style="width: 129px">	9.5</td></tr><tr><td class="grid" style="width: 57px">125</td>
+		<td class="grid" style="width: 110px">	LWMG</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_MG</td>
+		<td class="grid" style="width: 132px">	20</td>
+		<td class="grid" style="width: 129px">	1.4</td></tr>
+		
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+
+<tr><td class="gridL" colspan="5"><strong>Litterfall K: Units are in g m-2 yr-1
+		</strong>
+</td></tr>
+<tr><td class="grid" style="width: 57px">126</td>
+		<td class="grid" style="width: 110px">	LFLLK</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_K
+</td>
+		<td class="grid" style="width: 132px">	145</td>
+		<td class="grid" style="width: 129px">	9.7</td></tr><tr><td class="grid" style="width: 57px">127</td>
+		<td class="grid" style="width: 110px">	SWFLLK</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_K
+</td>
+		<td class="grid" style="width: 132px">	84</td>
+		<td class="grid" style="width: 129px">	5.7</td></tr><tr><td class="grid" style="width: 57px">128</td>
+		<td class="grid" style="width: 110px">	FINFLLK</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_K
+</td>
+		<td class="grid" style="width: 132px">	37</td>
+		<td class="grid" style="width: 129px">	2.5</td></tr><tr><td class="grid" style="width: 57px">129</td>
+		<td class="grid" style="width: 110px">	RPRFLLK</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_K
+</td>
+		<td class="grid" style="width: 132px">	54</td>
+		<td class="grid" style="width: 129px">	3.7</td></tr><tr><td class="grid" style="width: 57px">130</td>
+		<td class="grid" style="width: 110px">	LTRFLLK</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_K
+</td>
+		<td class="grid" style="width: 132px">	283</td>
+		<td class="grid" style="width: 129px">	19</td></tr><tr><td class="grid" style="width: 57px">131</td>
+		<td class="grid" style="width: 110px">	LWFLLK</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_FALL_K</td>
+		<td class="grid" style="width: 132px">	21</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr>
+		<tr><td class="gridL" colspan="5">&nbsp;</td>
+</tr>
+<tr><td class="gridL" colspan="5"><strong>Litter Pool K: Units are in g m-2 </strong> 
+
+</td></tr>
+<tr><td class="grid" style="width: 57px">132</td>
+		<td class="grid" style="width: 110px">	LLEAFK</td>
+		<td class="grid" style="width: 216px">	L_LEAF_K
+</td>
+		<td class="grid" style="width: 132px">	4</td>
+		<td class="grid" style="width: 129px">	0.3</td></tr><tr><td class="grid" style="width: 57px">133</td>
+		<td class="grid" style="width: 110px">	LSWK</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_K
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">134</td>
+		<td class="grid" style="width: 110px">	LFINK</td>
+		<td class="grid" style="width: 216px">	L_FINE_K
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">135</td>
+		<td class="grid" style="width: 110px">	LRPRK</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_K
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">136</td>
+		<td class="grid" style="width: 110px">	LLTRK</td>
+		<td class="grid" style="width: 216px">	L_LITTER_K
+		
+</td>
+		<td class="grid" style="width: 132px">	28</td>
+		<td class="grid" style="width: 129px">	1.9</td></tr><tr><td class="grid" style="width: 57px">137</td>
+		<td class="grid" style="width: 110px">	FLEAFK</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_K
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">138</td>
+		<td class="grid" style="width: 110px">	FSWK</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_K
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">139</td>
+		<td class="grid" style="width: 110px">	FFINK</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_K
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">140</td>
+		<td class="grid" style="width: 110px">	FRPRK</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_K
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">141</td>
+		<td class="grid" style="width: 110px">	FLTRK</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_K
+		
+</td>
+		<td class="grid" style="width: 132px">	35</td>
+		<td class="grid" style="width: 129px">	2.4</td></tr><tr><td class="grid" style="width: 57px">142</td>
+		<td class="grid" style="width: 110px">	TLEAFK</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_K
+</td>
+		<td class="grid" style="width: 132px">	63</td>
+		<td class="grid" style="width: 129px">	4.3</td></tr><tr><td class="grid" style="width: 57px">143</td>
+		<td class="grid" style="width: 110px">	TSWK</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_K
+</td>
+		<td class="grid" style="width: 132px">	20</td>
+		<td class="grid" style="width: 129px">	1.4</td></tr><tr><td class="grid" style="width: 57px">144</td>
+		<td class="grid" style="width: 110px">	TFINK</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_K
+</td>
+		<td class="grid" style="width: 132px">	8</td>
+		<td class="grid" style="width: 129px">	0.6</td></tr><tr><td class="grid" style="width: 57px">145</td>
+		<td class="grid" style="width: 110px">	TRPRK</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_K
+</td>
+		<td class="grid" style="width: 132px">	19</td>
+		<td class="grid" style="width: 129px">	1.3</td></tr><tr><td class="grid" style="width: 57px">146</td>
+		<td class="grid" style="width: 110px">	TLTRK</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_K
+</td>
+		<td class="grid" style="width: 132px">	160</td>
+		<td class="grid" style="width: 129px">	10.7</td></tr><tr><td class="grid" style="width: 57px">147</td>
+		<td class="grid" style="width: 110px">	LWK	</td>
+		<td class="grid" style="width: 216px">LARGE_WOOD_K</td>
+		<td class="grid" style="width: 132px">24</td>
+		<td class="grid" style="width: 129px">1.7</td></tr>
+		<tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr><td class="gridL" colspan="5"><strong>Litterfall Na: Units are in g m-2 yr-1
+		</strong>
+</td></tr><tr><td class="grid" style="width: 57px">148</td>
+		<td class="grid" style="width: 110px">	LFLLNA</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_NA
+</td>
+		<td class="grid" style="width: 132px">	42</td>
+		<td class="grid" style="width: 129px">	2.9</td></tr><tr><td class="grid" style="width: 57px">149</td>
+		<td class="grid" style="width: 110px">	SWFLLNA</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_NA
+</td>
+		<td class="grid" style="width: 132px">	22</td>
+		<td class="grid" style="width: 129px">	1.5</td></tr><tr><td class="grid" style="width: 57px">150</td>
+		<td class="grid" style="width: 110px">	FINFLLNA</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_NA
+</td>
+		<td class="grid" style="width: 132px">	11</td>
+		<td class="grid" style="width: 129px">	0.8</td></tr><tr><td class="grid" style="width: 57px">151</td>
+		<td class="grid" style="width: 110px">	RPRFLLNA</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_NA
+</td>
+		<td class="grid" style="width: 132px">	12</td>
+		<td class="grid" style="width: 129px">	0.9</td></tr><tr>
+		<td class="grid" style="width: 57px; height: 26px;">152</td>
+		<td class="grid" style="width: 110px; height: 26px;">	LTRFLLNA</td>
+		<td class="grid" style="width: 216px; height: 26px;">	LITTER_FALL_NA
+</td>
+		<td class="grid" style="width: 132px; height: 26px;">	75</td>
+		<td class="grid" style="width: 129px; height: 26px;">	5.1</td></tr><tr><td class="grid" style="width: 57px">153</td>
+		<td class="grid" style="width: 110px">	LWFLLNA</td>
+<td class="grid" style="width: 216px">LARGE_WOOD_FALL_NA</td>
+		<td class="grid" style="width: 132px">	9</td>
+		<td class="grid" style="width: 129px">0.7</td>
+
+</tr><tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr><td class="gridL" colspan="5"><strong>Litter Pool Na: Units are in g m-2 
+
+		</strong>
+</td></tr>
+<tr><td class="grid" style="width: 57px">154</td>
+		<td class="grid" style="width: 110px">	LLEAFNA</td>
+		<td class="grid" style="width: 216px">	L_LEAF_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">155</td>
+		<td class="grid" style="width: 110px">	LSWNA</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">156</td>
+		<td class="grid" style="width: 110px">	LFINNA</td>
+		<td class="grid" style="width: 216px">	L_FINE_NA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">157</td>
+		<td class="grid" style="width: 110px">	LRPRNA</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_NA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">158</td>
+		<td class="grid" style="width: 110px">	LLTRNA</td>
+		<td class="grid" style="width: 216px">	L_LITTER_NA		
+</td>
+		<td class="grid" style="width: 132px">	12</td>
+		<td class="grid" style="width: 129px">	0.9</td></tr><tr><td class="grid" style="width: 57px">159</td>
+		<td class="grid" style="width: 110px">	FLEAFNA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">160</td>
+		<td class="grid" style="width: 110px">	FSWNA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">161</td>
+		<td class="grid" style="width: 110px">	FFINNA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">162</td>
+		<td class="grid" style="width: 110px">	FRPRNA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">163</td>
+		<td class="grid" style="width: 110px">	FLTRNA</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_NA		
+</td>
+		<td class="grid" style="width: 132px">	11</td>
+		<td class="grid" style="width: 129px">	0.8</td></tr><tr><td class="grid" style="width: 57px">164</td>
+		<td class="grid" style="width: 110px">	TLEAFNA</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_NA
+</td>
+		<td class="grid" style="width: 132px">	38</td>
+		<td class="grid" style="width: 129px">	2.6</td></tr><tr><td class="grid" style="width: 57px">165</td>
+		<td class="grid" style="width: 110px">	TSWNA</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_NA
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">166</td>
+		<td class="grid" style="width: 110px">	TFINNA</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_NA
+</td>
+		<td class="grid" style="width: 132px">	5</td>
+		<td class="grid" style="width: 129px">	0.4</td></tr><tr><td class="grid" style="width: 57px">167</td>
+		<td class="grid" style="width: 110px">	TRPRNA</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_NA
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">168</td>
+		<td class="grid" style="width: 110px">	TLTRNA</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_NA		
+</td>
+		<td class="grid" style="width: 132px">	19</td>
+		<td class="grid" style="width: 129px">	1.3</td></tr><tr><td class="grid" style="width: 57px">169</td>
+		<td class="grid" style="width: 110px">	LWNA</td>
+	
+		<td class="grid" style="width: 216px">LARGE_WOOD_NA</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr>
+
+		
+		<tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr><td class="gridL" colspan="5"><strong>Litterfall Mn: Units are in g m-2 yr-1
+		</strong>
+</td></tr><tr><td class="grid" style="width: 57px">170</td>
+		<td class="grid" style="width: 110px">	LFLLMN</td>
+		<td class="grid" style="width: 216px">	LEAF_FALL_MN
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">171</td>
+		<td class="grid" style="width: 110px">	SWFLLMN</td>
+		<td class="grid" style="width: 216px">	SMALL_WOOD_FALL_MN
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">172</td>
+		<td class="grid" style="width: 110px">	FINFLLMN</td>
+		<td class="grid" style="width: 216px">	FINE_FALL_MN
+</td>
+		<td class="grid" style="width: 132px">	2</td>
+		<td class="grid" style="width: 129px">	0.2</td></tr><tr><td class="grid" style="width: 57px">173</td>
+		<td class="grid" style="width: 110px">	RPRFLLMN</td>
+		<td class="grid" style="width: 216px">	REPRODUCTIVE_FALL_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">174</td>
+		<td class="grid" style="width: 110px">	LTRFLLMN</td>
+		<td class="grid" style="width: 216px">	LITTER_FALL_MN
+</td>
+		<td class="grid" style="width: 132px">	19</td>
+		<td class="grid" style="width: 129px">	1.3</td></tr><tr>
+		<td class="grid" style="width: 57px; height: 26px;">175</td>
+		<td class="grid" style="width: 110px; height: 26px;">	LWFLLMN</td>
+	
+		<td class="grid" style="width: 216px; height: 26px;">LARGE_WOOD_FALL_MN</td>
+		<td class="grid" style="width: 132px; height: 26px;">	0</td>
+		<td class="grid" style="width: 129px; height: 26px;">	0</td>
+
+</tr><tr><td class="gridL" colspan="5">&nbsp;
+</td></tr><tr><td class="gridL" colspan="5"><strong>Litter Pool Mn: Units are in g m-2 
+
+		</strong>
+</td></tr><tr><td class="grid" style="width: 57px">176</td>
+		<td class="grid" style="width: 110px">	LLEAFMN</td>
+		<td class="grid" style="width: 216px">	L_LEAF_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">177</td>
+		<td class="grid" style="width: 110px">	LSWMN</td>
+		<td class="grid" style="width: 216px">	L_SMALL_WOOD_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">178</td>
+		<td class="grid" style="width: 110px">	LFINMN</td>
+		<td class="grid" style="width: 216px">	L_FINE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">179</td>
+		<td class="grid" style="width: 110px">	LRPRMN</td>
+		<td class="grid" style="width: 216px">	L_REPRODUCTIVE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">180</td>
+		<td class="grid" style="width: 110px">	LLTRMN</td>
+		<td class="grid" style="width: 216px">	L_LITTER_MN		
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">181</td>
+		<td class="grid" style="width: 110px">	FLEAFMN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LEAF_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">182</td>
+		<td class="grid" style="width: 110px">	FSWMN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_SMALL_WOOD_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">183</td>
+		<td class="grid" style="width: 110px">	FFINMN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_FINE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">184</td>
+		<td class="grid" style="width: 110px">	FRPRMN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_REPRODUCTIVE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">185</td>
+		<td class="grid" style="width: 110px">	FLTRMN</td>
+		<td class="grid" style="width: 216px">	F_AND_H_LITTER_MN		
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">186</td>
+		<td class="grid" style="width: 110px">	TLEAFMN</td>
+		<td class="grid" style="width: 216px">	TOTAL_LEAF_MN
+</td>
+		<td class="grid" style="width: 132px">	1</td>
+		<td class="grid" style="width: 129px">	0.1</td></tr><tr><td class="grid" style="width: 57px">187</td>
+		<td class="grid" style="width: 110px">	TSWMN</td>
+		<td class="grid" style="width: 216px">	TOTAL_SMALL_WOOD_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">188</td>
+		<td class="grid" style="width: 110px">	TFINMN</td>
+		<td class="grid" style="width: 216px">	TOTAL_FINE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">189</td>
+		<td class="grid" style="width: 110px">	TRPRMN</td>
+		<td class="grid" style="width: 216px">	TOTAL_REPRODUCTIVE_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">190</td>
+		<td class="grid" style="width: 110px">	TLTRMN</td>
+		<td class="grid" style="width: 216px">	TOTAL_LITTER_MN		
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr><tr><td class="grid" style="width: 57px">191</td>
+		<td class="grid" style="width: 110px">	LWMN</td>
+		<td class="grid" style="width: 216px">	LARGE_WOOD_MN
+</td>
+		<td class="grid" style="width: 132px">	0</td>
+		<td class="grid" style="width: 129px">	0</td></tr></tbody>
+</table>
+
+<a name="appderivation"></a>
+
+<h2>3. Data Application and Derivation:</h2>
+<p class="I1">These data can be used to support the analysis of global patterns of carbon and nutrients in litterfall and litter pools of carbon and nutrients. </p>
+	<p class="I1">&nbsp;</p>
+<a name="qualityassess"></a>
+<h2>4. Quality Assessment:</h2>
+	<p class="I1">Data sources did not always divide litterfall into the same categories. To accommodate various reporting practices a hierarchy of 
+	six categories was developed. Leaf, small wood, reproductive, and large wood 
+	were chosen as nominal categories. In addition, “leaf+small wood” and “total fine”&nbsp; 
+	are provided for those studies that did not subdivide the component fractions (Table 
+	2, below).</p>
+	<p class="I1">Different investigators applied different definitions of small wood. The cutoff between small and large wood ranges from 2 mm to 5 cm in diameter. 
+	Small wood is defined as&nbsp; <5 mm when possible. Otherwise the investigators’ 
+	definition (sometimes unstated) was used. As a result, the size of material considered to be small wood varies among the data sources.
+
+</p>
+	
+<a name="HAcqMatMethods"></a>
+<h2>5. Data Acquisition Materials and Methods:</h2>
+	<p class="I1"><strong>Literature Review:</strong></p>
+	<p class="I1">Investigators exclusively used literature sources reporting 
+	primary measurements of litterfall and littermass. The litter database was 
+	developed from about 685 original documents. Data was extracted from 
+	published and unpublished documents in the categories of journal articles, 
+	books, edited books, technical reports, and theses with publication dates 
+	ranging from 1867 to 1997. A complementary bibliographic data set comprising 
+	every document used in the compilation was created.</p>
+	<p class="I1">These collections were greatly aided by the reviews of Bray and Gorham (1964), Hutson and Veitch (1985), O’Neill and DeAngelis (1981), Proctor (1983), Vitousek (1984), and Vogt et al. (1986), A first assessment of the utility and thoroughness of our collection took place at a working group meeting hosted by the Max Planck Institute for Biogeochemistry.</p>
+	<p class="I1">Attention was paid to getting relatively complete 
+	representation of sites across ecosystem type, climatic regime, and global 
+	spatial distribution. Carbon data was of primary concern but measurements 
+	for other nutrients were also obtained and include N, P, magnesium (Mg), 
+	calcium (Ca), potassium (K), sodium (Na), and manganese (Mn). The data set 
+	remains sparse for elements other than C and N. When possible, compositional 
+	information (leaf, small wood, reproductive, coarse wood) was retained. 
+	Turnover times and decay rates were able to be estimated using this 
+	information.</p>
+
+	<p class="I1"><strong>Guidelines for Extracting and Reporting Data:</strong></p>
+	<p class="I1">With such a wide-ranging collection of source literature, deriving a consistent set of guidelines for extracting the data proved difficult.  Our approach was to develop guidelines and to include notes with the measurements to increase the probability that the details would be clear about how the primary data was handled.  In summary, the reference, site information, and measurements of carbon and nutrients or litter fall and litter pool components 
+	were recorded.  The measurements were reported in many different units and converted 
+	into kg m-2 for dry mass, and into g m-2 for N, P, and nutrients.</p>
+	<p class="I1"><strong>Note that dry matter was not converted to carbon.</strong> This conversion fraction (~0.5 
+	by mass) can vary and so the reported measurements 
+	were not converted so that others using the database could choose appropriate conversion factors.</p>
+	<p class="I1">Each record in the database represents a site. The intention 
+	was to compile a comprehensive data set of individual direct field 
+	measurements reported by researchers. Most often site averages from 
+	replicate research plots were reported in the literature source. However, 
+	reported measurements were averaged under the following two circumstances. 
+	(1) replicate measurements obtained from a series of plots or litterfall 
+	traps at a single site were averaged when the plots were established to 
+	characterize spatial variability within a relatively uniform cover type. (2) 
+	measurements obtained in consecutive years at a single site were averaged 
+	when these measurements were designed to capture interannual variability of 
+	a relatively uniform cover type. The averages were recorded in the database. 
+	If several measurements were reported, even if for the same litter feature 
+	(like leaf litter pool or coarse wood pool), but otherwise distinguished as 
+	different by the author (e.g., along an elevational gradient, 
+	chronosequence, or completely unrelated in space), these measurements were 
+	treated as representing different sites. If several measurements were made 
+	during the year to account for seasonal variation then we summed litterfall 
+	measurements and reported an annual total and average litter pool measures 
+	and reported an annual average. In most cases only a single measurement 
+	period is reported. In the case of litterfall this is most often at the 
+	beginning of the dormant period when most, but not all, the litterfall 
+	occurs. For littermass, one-time measurements are problematic in ecosystems 
+	with large seasonal variation in the amount of littermass. If measurements 
+	are not taken in the same season then unintended variation is introduced. 
+	Often, littermass is measured when it is maximal, at the beginning of the 
+	dormant season. Seasonal variation was not adjusted when one time 
+	measurements were reported.</p>
+	<p class="I1"><strong>Exclusions and Exceptions:</strong></p>
+		<p class="I1">For every source document, the site description, method, and results 
+		were carefully reviewed.  If a study site was not described well enough to locate within 0.5 degree latitude or longitude, measurements from the source were not used.  Data were also omitted if litter fall or litter pools were not reported as oven-dry weight or if units were indecipherable. The only exception made to this dry-weight standard was for standing dead mass since this material is extremely difficult to harvest and dry. Often the weight of standing dead material is estimated using a volume estimate which is already converted to dry weight.  The presence or absence of ash, an estimate of non-organic matter in litter and frequently reported with dry mass measurements, was not a criterion used to include or exclude measurements. 
+		 However, if ash was reported separately from dry mass, the ash weight 
+		was subtracted and ash free dry weight was reported.</p>
+		 <p class="I1"><strong>General Description of Litterfall and Littermass Data Categories</strong></p>
+			<p class="I1"><strong>Litterfall:</strong></p>
+	<p class="I1">
+In nearly every data source only aboveground litterfall production was reported. This database is therefore limited to aboveground litterfall. All reported measurements were converted to weight per unit area and totaled, when appropriate, to year values. For litterfall dry weight we report kg m-2 yr-1. For nutrients we use g m-2 yr-1. </p>
+	<p class="I1">Litterfall may be divided into many categories. Data sources did not always divide litterfall into the same categories. To accommodate various reporting practices we developed a hierarchy of 6 categories. We chose leaf, small wood, reproductive, and large wood as nominal categories. We also provide “leaf+small wood” and “total fine” for those studies that did not subdivide the component fractions (Table 
+	2). </p>
+	<p class="I1"><strong>Table 2.  Hierarchy of litterfall and littermass categories for plant tissue category used in the database.</strong></p>
+	
+	
+	
+	<table class="grid"><tbody><tr>	
+<th class="grid" colspan="2">Lumped Categories</th>
+			<th class="grid">Nominal Categories</th>
+			<th class="grid">Split Categories</th>
+		</tr>
+		<tr>
+			<td class="grid" rowspan="9">Total fine	</td>
+			<td class="grid" rowspan="6">Leaf + Small wood	</td>
+	<td class="grid" rowspan="3">Leaf	</td>
+			<td class="grid">Blade</td>
+</tr>
+		<tr><td class="grid">Petiole</td>
+</tr>
+		<tr><td class="grid">Bud scales</td>
+</tr>
+		<tr> 
+		<td class="grid" rowspan="3">	Small wood	</td>
+			<td class="grid">Twig</td>
+</tr>
+		<tr><td class="grid">Small branch</td>
+</tr>
+		<tr><td class="grid">Bark</td>
+</tr>
+		<tr> 
+			<td class="grid" rowspan="3">	Reproductive</td>
+<td class="grid" rowspan="3">
+			Reproductive</td>
+<td class="grid">Flower</td>
+</tr>
+		<tr><td class="grid">Pollen</td>
+</tr>
+		<tr><td class="grid">Fruit (seed, fleshy part, husk, cone, etc.)</td>
+</tr>
+		<tr> 
+			<td class="grid" colspan="2" rowspan="3">
+			Large wood</td>
+<td class="grid" rowspan="3">
+			Large wood</td>
+<td class="grid">Large branch (fallen)</td>
+</tr>
+		<tr><td class="grid">Bole (fallen)</td>
+</tr>
+		<tr> 
+			<td class="grid">Standing dead</td>
+</tr>
+		<tr> 
+		<td class="grid" colspan="2">Not included</td>
+<td class="grid">Not included</td>
+<td class="grid">Roots (fine, small, large)</td>
+</tr></tbody>
+	</table>
+	<br>
+	<p class="I1">When possible reported measurements were either lumped or split to fit our nominal categories. If this was not possible 
+	the information was recorded in the appropriate lumped categories. In many cases, particularly for reproductive and large wood, not all categories of litterfall were reported.   In these cases the corresponding nominal category and any lumped categories that contain this nominal category were marked missing. Different investigators applied different definitions of small wood. The cutoff between small and large wood ranges from 2 mm to 5 cm in diameter. 
+	Small wood was defined as&nbsp; <5 mm when possible. Otherwise the investigators’ (sometimes unstated) definition 
+	was used. As a result, the size of material considered to be small wood varies among the data sources.</p>
+	
+	<p class="I1"><strong>Littermass:</strong></p>
+		<p class="I1">
+Littermass measurements reported were converted to weight per unit area. 
+		Littermass dry weight is reported as kg m-2. Littermass nutrients is 
+		reported as g m-2. </p>
+
+	<p class="I1">Littermass measurements were divided into categories based on types of plant tissues in the same fashion as litterfall described above. </p>
+		<p class="I1">Littermass pools are often divided into temporal categories based on the degree of decomposition of the constituent materials. These are frequently reported separately because of their differences in nutrient content and importance in nutrient cycling (Aber et al. 1978). These different littermass pools form vertical layers with the most decomposed layer next to the soil surface and the freshest material on the top. The surface or L-layer consists of freshly fallen material that is intact and relatively undecomposed. The next layer down is called the fermentation or F-layer and is largely fragmented, colonized by microbial and fungal decomposers, but still recognizable as to the category of plant tissue. The third layer, in contact with the mineral soil surface is considerably transformed, physically and chemically. This layer is referred to as the humification or H-layer and may or may not be easily distinguished from the surface mineral soil layer. The L, F and H layers are alternatively referred to as the Oa, Oe and Oi layers respectively. In practice it is difficult to objectively distinguish the F and H layers so they are often combined into a F+H layer.  If the investigator distinguished separate littermass layers 
+	the data were recorded separately into L and F+H categories. If these layers were not distinguished the littermass data 
+	were entered as Total category for each plant tissue category (see Table 
+	3).
+
+</p>	
+	<p class="I1"><strong>Table 3. Hierarchy of littermass categories for decomposition category used in the database.</strong></p>
+	
+	<table class="grid"><tbody><tr>	
+<th class="grid" style="height: 27px">Lumped Categories</th>
+			<th class="grid" style="height: 27px">Nominal Categories</th>
+			<th class="grid" colspan="2" style="height: 27px">Split Categories</th>
+		</tr>
+		<tr>
+	<td class="grid" rowspan="3">
+			Total litter</p>
+			</td>
+			<td  class="grid">L layer
+			</td>
+			<td class="grid">L layer
+			</td>
+			<td  class="grid">Oa layer
+			</td>
+		</tr>
+		<tr>
+			 <td class="grid" rowspan="2">
+			F+H layer
+			</td>
+<td class="grid">F layer</td>
+			<td class="grid">Oe layer</td>
+		</tr>
+		<tr><td class="grid">H layer
+			</td>
+			<td class="grid">Oi layer	</td>
+		</tr></tbody>
+	</table>
+	<br>
+	
+	<a name="HDataDescrAccess"></a>
+	
+	
+<h2>6. Data Access:</h2>
+<p class="I1">
+These data are available through the Oak Ridge
+National Laboratory (ORNL) Distributed Active Archive Center (DAAC).</p>
+<h2>Data Archive Center:</h2>
+<p class="I3">Contact for Data Center Access Information:<p>
+<p class="I3">E-mail: <a href="mailto:uso@daac.ornl.gov">uso@daac.ornl.gov</a><br>
+Telephone: +1 (865) 241-3952<br>
+<br>
+</p>
+<a name="references"></a>
+<h2>7. References:</h2>
+	<p class="I1">Aber, J.D., D.B. Botkin, and J.M. Melillo 1978. Predicting the effects of different harvesting regimes on forest floor dynamics in northern hardwoods. Can. J. For. Res. 8:306-315. </p>
+	<p class="I1">Bray, J.R. and E. Gorham 1964. Litter production in forests of 
+	the world. Advances in Ecological Research 2:101-157.</p>
+	<p class="I1">Hutson, B.R., and L. G. Veitch. 1985. Relationships between litterfall rate, litter mass and decomposition rate in Eucalyptus forests in southeastern Australia. Australian Journal of Ecology 10.4: 443-450. 
+ </p>
+<p class="I1">O’Neill, R.V. and D.L. DeAngelis 1981. Comparative productivity and biomass relations of forest ecosystems. Dynamic Properties of Forest Ecosystems, 411-449. 
+ </p>
+<p class="I1">Proctor, J. 1983. Tropical forest litterfall. I. Problems of data comparison. Special publications series of the British Ecological Society. 
+Vitousek PM. 1984. Litterfall, nutrient cycling and nutrient limitation n tropical forests. Ecology 65:285-298.</p>
+	<p class="I1">Vitousek PM. 1984. Litterfall, nutrient cycling and nutrient limitation n tropical forests. Ecology 65:285-298. </p>
+	<p class="I1">Vogt, K.A., C.C. Grier, and D.J. Vogt 1986. Production, Turnover, and Nutrient Dynamics of Above- and Belowground Detritus of World Forests. Advances in Ecological Research 15:303-377.
+ </p>
+
+	<p class="I1">The bibliographic sources for the data are provided as a companion file in ASCII text format, 
+	<strong>
+	<a href="http://daac.ornl.gov/daacdata/global_vegetation/Global_Litter_Carbon_Nutrients/comp/Litterfall_source_bibliography.txt">Litterfall_source_bibliography.txt.</a></strong></p>
+
+
+
+</div>
+<!--#include virtual="/guide_footer.shtml" --></div>
+</div>
+
+</body>
+</html>
